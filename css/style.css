@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Barabara';
     src: url('fonts/Barabara.otf.otf') format('opentype');
@@ -76,13 +75,21 @@ nav {
   box-shadow: var(--shadow-sm);
 }
 
-.nav__logo a {
+/* UPDATED: Added style for the new logo image */
+.nav__logo img {
+    height: 50px; /* Adjust this value to make the logo larger or smaller */
+    width: auto; 
+    display: block;
+}
+
+/* REMOVED/COMMENTED OUT: Old style for the text logo is no longer needed */
+/* .nav__logo a {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-}
+} */
 
 .nav__links {
   display: flex; align-items: center; gap: 2rem;
@@ -172,10 +179,10 @@ header {
     background-attachment: fixed; 
     position: relative;
 }
-.header-destinations { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Reef to Ridge.jpg'); }
+.header-destinations { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Reef\ to\ Ridge.jpg'); }
 .header-culture { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/sambuokan.jpg'); } 
-.header-guide { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Travel Guide.jpg'); }
-.header-about { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/About Us.jpg'); }
+.header-guide { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Travel\ Guide.jpg'); }
+.header-about { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/About\ Us.jpg'); }
 .header-accommodations { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Accomodations.jpg'); }
 
 @keyframes fadeInUp {
@@ -324,9 +331,4 @@ footer { background-color: var(--primary-color); color: var(--white); }
 @media (max-width: 600px) {
   .journey__grid, .display__grid, .footer__container { grid-template-columns: 1fr; }
   .grid-1 { grid-column: span 1; }
-
 }
-
-
-
-
