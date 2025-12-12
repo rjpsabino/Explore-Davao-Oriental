@@ -174,7 +174,7 @@ header {
 }
 .header-destinations { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Reef to Ridge.jpg'); }
 .header-culture { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/sambuokan.jpg'); } 
-.header-guide { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Travel Guide'); }
+.header-guide { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Travel Guide.jpg'); }
 .header-about { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(''); }
 .header-accommodations { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Accomodations.jpg'); }
 
@@ -326,4 +326,5 @@ footer { background-color: var(--primary-color); color: var(--white); }
   .grid-1 { grid-column: span 1; }
 
 }
+
 
