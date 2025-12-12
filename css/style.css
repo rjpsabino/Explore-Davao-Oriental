@@ -76,6 +76,11 @@ nav {
 }
 
 .nav__logo a {
+  /* MODIFIED: Added display flex to align the icon and text horizontally */
+  display: flex; 
+  align-items: center;
+  gap: 10px; /* Space between the logo and the text */
+  
   font-family: var(--font-heading);
   font-size: 2.2rem;
   color: var(--primary-color);
@@ -83,11 +88,12 @@ nav {
   letter-spacing: 1px;
 }
 
-/* ADDED: New style block to control the size of the logo image */
-.nav__logo img {
-    height: 50px; /* Sets the visual size of the logo in the nav bar */
-    width: auto; /* Ensures the logo scales without distortion */
+/* ADDED: Style block to control the size of the new icon image */
+.nav-icon-logo {
+    height: 30px; /* Sizing the icon to fit next to the text */
+    width: auto; 
     display: block;
+    margin: 0; /* Ensures no extra space is added by default 'img' margin */
 }
 
 .nav__links {
