@@ -75,21 +75,20 @@ nav {
   box-shadow: var(--shadow-sm);
 }
 
-/* UPDATED: Added style for the new logo image */
-.nav__logo img {
-    height: 50px; /* Adjust this value to make the logo larger or smaller */
-    width: auto; 
-    display: block;
-}
-
-/* REMOVED/COMMENTED OUT: Old style for the text logo is no longer needed */
-/* .nav__logo a {
+.nav__logo a {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-} */
+}
+
+/* ADDED: New style block to control the size of the logo image */
+.nav__logo img {
+    height: 50px; /* Sets the visual size of the logo in the nav bar */
+    width: auto; /* Ensures the logo scales without distortion */
+    display: block;
+}
 
 .nav__links {
   display: flex; align-items: center; gap: 2rem;
